@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+` QQQQQQQQQQQQQ<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,28 +9,52 @@
             }
     </style>        
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>John streetball MC.IO</title>
+    <title>StreetballLiveMC.IO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <script src="myscript.js" defer></script>
+    <script src="main.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-
-
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <!-- <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyDHJ6F6qAtzhcwQ1RxB6koiOEEmGvQGmh8",
+    authDomain: "demoday-222ed.firebaseapp.com",
+    databaseURL: "https://demoday-222ed.firebaseio.com",
+    projectId: "demoday-222ed",
+    storageBucket: "demoday-222ed.appspot.com",
+    messagingSenderId: "470147529572"
+    };
+    firebase.initializeApp(config);
+    </script> -->
+    <!--custom files-->
+    <script src="lib/js/main.js" defer></script>
+    <link rel="stylesheet" href="lib/css/style.css">
 </head>
 <body>
+    <div class="container">
+        <input id = "textEmail" type="email" placeholder="Email">
+        <input id = "textPassword" type ="password" placeholder="password">
+        <button id = "btnLogin" class="btn btn-action">login in</button>
+        <button id = "btnSignin" class="btn btn-secondary">sign up</button>
+        <button id="btnLogout" class="btn btn-action hide">Log out</button>
+        </div>
+        <script src="myscript.js"></script>
+        </div>
         <div class="header">
-        <a href="#"><img id="logo" src="https://files.slack.com/files-pri/TBG2L18RF-FC5UTP2NL/demolaisagodking.png"></a> 
+            <img id="logo" src="https://files.slack.com/files-pri/TBG2L18RF-FC5UTP2NL/demolaisagodking.png" >
         <h1>Our Streetball Website</h1>
-        <p2>A website created by yours truely.</p2>
+        
+        <p>Made by John, Kevin, and Justin</p>
         </div>
         <div class="navbar">
-                <a href="#"id="about">About us</a>
-                <a href="https://www.linkedin.com/in/john-morgan-582818162">contact us</a>
-                <a href="https://www.youtube.com/watch?v=qaZIPRSgLkY">story of streetball video</a>
-                <a href="http://www.agame.com/games/basketball">game site</a>
+                <a href="#"id="about">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="https://www.youtube.com/watch?v=qaZIPRSgLkY" target="_blank">Origins of Streetball video</a>
+                <a href="http://www.agame.com/games/basketball" target="_blank">Online Basketball Games</a>
               </div>
               <div id="box">
-                <h1>About Me</h1>
+                <h1>About Us</h1>
               <p> Every summer they have a tournament hosted by positiveinfluencebball. I go see players in high school and younger. I play streetball on my old middle school. I was playing streetball with other middle schoolers.   </p>
               <div class="navbar">
                   <div class="dropdown">
@@ -43,7 +67,7 @@
                     </div> 
                     <div class="row">
                       <div class="column">
-                        <h3>Email Me</h3>
+                        <h3>Email Us</h3>
                         <a href="#">johnm4692@gmail.com</a>
                       </div>
                     </div>
