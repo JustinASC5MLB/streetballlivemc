@@ -29,7 +29,6 @@ aboutBtn.addEventListener("click", function() {
     box.style.display = "block";
     clicked = false;
   }
-<<<<<<< HEAD
 });
 const submit = document.getElementById("submit");
 submit.addEventListener("click", function(event){
@@ -47,12 +46,10 @@ window.location.href='3index.html'
 // function startTheGame(){
 //   window.location.href = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCCbGAk_7TAKEWEEcvoJUv5Vmz4lrB2oqs";
 // }
-=======
-})
->>>>>>> 803a5ec3d158ae39aa21d908c43ae4751e27cf79
 
 // submit.addEventListener('click', myFunctionReference , false);
 
+
 // function showPosition(position){
 //     console.log(position);
 //     let latlon = position.coords.latitude + "," + position.coords.longitude;  //demo.innerText =
@@ -65,66 +62,6 @@ window.location.href='3index.html'
 //     console.log(pos);
 //     return pos;
 // }
-
-
-<<<<<<< HEAD
-// function showPosition(position){
-//     console.log(position);
-//     let latlon = position.coords.latitude + "," + position.coords.longitude;  //demo.innerText =
-//     let img_url = 'https://maps.googleapis.com/maps/api/staticmap?center='+latlon+
-//     '&zoom=14&size=400x300&sensor=false&key=AIzaSyCCbGAk_7TAKEWEEcvoJUv5Vmz4lrB2oqs';
-//     document.querySelector("#demo").innerHTML = "<img src='" + img_url + "'>";
-//     let pos = {}
-//     pos['longitude'] = position.coords.longitude;
-//     pos['latitude'] = position.coords.latitude;
-//     console.log(pos);
-//     return pos;
-// }
-=======
-// function coord (){
-//   let pos = {}
-  
-//   navigator.geolocation.getCurrentPosition(function(position)  {
-//     pos['lat'] = Number(position.coords.latitude)
-//     pos['lng'] = Number(position.coords.longitude)
-   
-//   });
-//   console.log(pos)
-//   return pos
-// }
-
-
-function initMap(){
-
-
-  var map = new google.maps.Map(document.getElementById("demo"), {
-  zoom: 8,
-  center: new google.maps.LatLng(53, 0)
-  });
-
-    if(navigator.geolocation){
-      navigator.geolocation.getCurrentPosition(function(position){
-        initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
-        map.setCenter(initialLocation)
-        map.setZoom(16)
-        var marker = new google.maps.Marker({
-          position: initialLocation,
-          map:map,
-          title: 'Hello World!'
-        })
-      })
-    }
-}
-
-
-
-const button = document.querySelector("#startgame");
-const demo = document.querySelector("#demo");
-button.addEventListener("click", getLocation);
-function getLocation(){
-    initMap()
-}
->>>>>>> 803a5ec3d158ae39aa21d908c43ae4751e27cf79
 
 
 // function coord (){
@@ -171,20 +108,8 @@ function getLocation(){
     initMap()
 }
 
-<<<<<<< HEAD
-=======
-btnLogin.addEventListener('click', e => {                  //Log in users
- const email = txtEmail.value;
- const pass = txtPass.value;
- const auth = firebase.auth();
->>>>>>> 803a5ec3d158ae39aa21d908c43ae4751e27cf79
 
 
-<<<<<<< HEAD
-=======
- clearInput();
-});
->>>>>>> 803a5ec3d158ae39aa21d908c43ae4751e27cf79
 
 
 
@@ -282,10 +207,7 @@ btnLogin.addEventListener('click', e => {                  //Log in users
 
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 803a5ec3d158ae39aa21d908c43ae4751e27cf79
 
 
 // const usernameElement = document.getElementById("username");
@@ -335,7 +257,6 @@ btnLogin.addEventListener('click', e => {                  //Log in users
 // auth.createUserWithEmailAndPassword(email,pass);
 // auth.onAuthStateChanged(firebaseUser =>{});
 
-<<<<<<< HEAD
 // promise.then(u => {
 //   firebase.database().ref('users/' + auth.currentUser.uid).set({
 //     EMAIL : email,
@@ -344,13 +265,3 @@ btnLogin.addEventListener('click', e => {                  //Log in users
 //     PFP : pfpU,
 //   });
 // });
-=======
-promise.then(u => {
-  firebase.database().ref('users/' + auth.currentUser.uid).set({
-    EMAIL : email,
-    NAME : nameU,
-    INBOX : inbox,
-    PFP : pfpU,
-  });
-});
->>>>>>> 803a5ec3d158ae39aa21d908c43ae4751e27cf79
