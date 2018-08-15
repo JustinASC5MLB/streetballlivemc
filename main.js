@@ -30,7 +30,11 @@ aboutBtn.addEventListener("click", function() {
     clicked = false;
   }
 })
-
+const submit = document.querySelector('#submit');
+submit.addEventListener("click", function(event){
+event.preventDefault();
+window.location.href='3index.html'
+} )
 
 // function showPosition(position){
 //     console.log(position);
@@ -95,96 +99,96 @@ function getLocation(){
 
 
 
-var config = {
-    apiKey: "AIzaSyDHJ6F6qAtzhcwQ1RxB6koiOEEmGvQGmh8",
-    authDomain: "demoday-222ed.firebaseapp.com",
-    databaseURL: "https://demoday-222ed.firebaseio.com",
-    projectId: "demoday-222ed",
-    storageBucket: "demoday-222ed.appspot.com",
-    messagingSenderId: "470147529572"
-    };
+// var config = {
+//     apiKey: "AIzaSyDHJ6F6qAtzhcwQ1RxB6koiOEEmGvQGmh8",
+//     authDomain: "demoday-222ed.firebaseapp.com",
+//     databaseURL: "https://demoday-222ed.firebaseio.com",
+//     projectId: "demoday-222ed",
+//     storageBucket: "demoday-222ed.appspot.com",
+//     messagingSenderId: "470147529572"
+//     };
 
 
-firebase.initializeApp(config);
+// firebase.initializeApp(config);
 
-const txtEmail = document.getElementById('txtEmail');
-const txtPass = document.getElementById('txtPass');
-const txtName = document.getElementById('txtName');
-const btnLogin = document.getElementById('buttonLogin');
-const btnSignup = document.getElementById('buttonSignUp');
-const btnLogout = document.getElementById('buttonLogout');
-const fileInput = document.querySelector('#file');
-const email = document.getElementById('txtEmail');
+// const txtEmail = document.getElementById('txtEmail');
+// const txtPass = document.getElementById('txtPass');
+// const txtName = document.getElementById('txtName');
+// const btnLogin = document.getElementById('buttonLogin');
+// const btnSignup = document.getElementById('buttonSignUp');
+// const btnLogout = document.getElementById('buttonLogout');
+// const fileInput = document.querySelector('#file');
+// const email = document.getElementById('txtEmail');
 
-function clearInput() {
- txtEmail.value = "";
- txtPass.value = "";
- txtName.value = "";
-}
+// function clearInput() {
+//  txtEmail.value = "";
+//  txtPass.value = "";
+//  txtName.value = "";
+// }
 
-btnLogin.addEventListener('click', e => {                  //Log in users
- const email = txtEmail.value;
- const pass = txtPass.value;
- const auth = firebase.auth();
+// btnLogin.addEventListener('click', e => {                  //Log in users
+//  const email = txtEmail.value;
+//  const pass = txtPass.value;
+//  const auth = firebase.auth();
 
- const promise = auth.signInWithEmailAndPassword(email,pass);
- promise.catch(e => console.log(e.message));
+//  const promise = auth.signInWithEmailAndPassword(email,pass);
+//  promise.catch(e => console.log(e.message));
 
- clearInput();
-});
+//  clearInput();
+// });
 
-btnSignup.addEventListener('click', e => {//Sign up new account
- const email = txtEmail.value;
- const pass = txtPass.value;
- const name = txtName.value;
- const auth = firebase.auth();
+// btnSignup.addEventListener('click', e => {//Sign up new account
+//  const email = txtEmail.value;
+//  const pass = txtPass.value;
+//  const name = txtName.value;
+//  const auth = firebase.auth();
 
- // writeUserData(email, name);
- const promise = auth.createUserWithEmailAndPassword(email,pass);
- promise.then(u => {
-   firebase.database().ref('users/' + auth.currentUser.uid).set({
-     email: email,
-     username: name
-   });
+//  // writeUserData(email, name);
+//  const promise = auth.createUserWithEmailAndPassword(email,pass);
+//  promise.then(u => {
+//    firebase.database().ref('users/' + auth.currentUser.uid).set({
+//      email: email,
+//      username: name
+//    });
 
 
 
-   const file = fileInput.files[0];
+//    const file = fileInput.files[0];
    
-   firebase.storage().ref().child('users/' + auth.currentUser.uid).put(file).then(function(result) {
-      console.log('success');
-   }).catch(function(error) {
-      console.log('error', error);
-   });
+//    firebase.storage().ref().child('users/' + auth.currentUser.uid).put(file).then(function(result) {
+//       console.log('success');
+//    }).catch(function(error) {
+//       console.log('error', error);
+//    });
 
-   clearInput();
- });
+//    clearInput();
+//  });
 
- promise.catch(function() { console.log(e.message)});
-})
+//  promise.catch(function() { console.log(e.message)});
+// })
 
-btnLogout.addEventListener('click', e => {//Logs out user
- firebase.auth().signOut();
- clearInput();
-})
+// btnLogout.addEventListener('click', e => {//Logs out user
+//  firebase.auth().signOut();
+//  clearInput();
+// })
 
-firebase.auth().onAuthStateChanged(firebaseUser => {//if logged in or logged out, clear or make visible the logut
- if(firebaseUser) {
-   btnLogout.style.display = "inline";
-   fileInput.style.display = 'inline'
- }
- else {
-   btnLogout.style.display = "none";
-   fileInput.style.display = 'none'
- }
-})
+// firebase.auth().onAuthStateChanged(firebaseUser => {//if logged in or logged out, clear or make visible the logut
+//  if(firebaseUser) {
+//    btnLogout.style.display = "inline";
+//    fileInput.style.display = 'inline'
+//  }
+//  else {
+//    btnLogout.style.display = "none";
+//    fileInput.style.display = 'none'
+//  }
+// })
 
-function writeUserData(email, name) {//adds user data to the database
- firebase.database().ref('users/' + firebase.auth.currentUser.uid).set({
-   email: email,
-   name: name
- });
-}
+// function writeUserData(email, name) {//adds user data to the database
+//  firebase.database().ref('users/' + firebase.auth.currentUser.uid).set({
+//    email: email,
+//    name: name
+//  });
+// }
 
 
 
@@ -228,6 +232,7 @@ function writeUserData(email, name) {//adds user data to the database
 
 
 // }
+
 // // Set database "child_added" event listener here
 // database.on("child_added", function (dataRef){
 //     const data = dataRef.val();  
@@ -238,11 +243,11 @@ function writeUserData(email, name) {//adds user data to the database
 // auth.createUserWithEmailAndPassword(email,pass);
 // auth.onAuthStateChanged(firebaseUser =>{});
 
-promise.then(u => {
-  firebase.database().ref('users/' + auth.currentUser.uid).set({
-    EMAIL : email,
-    NAME : nameU,
-    INBOX : inbox,
-    PFP : pfpU,
-  });
-});
+// promise.then(u => {
+//   firebase.database().ref('users/' + auth.currentUser.uid).set({
+//     EMAIL : email,
+//     NAME : nameU,
+//     INBOX : inbox,
+//     PFP : pfpU,
+//   });
+// });
