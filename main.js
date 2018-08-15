@@ -29,35 +29,12 @@ aboutBtn.addEventListener("click", function() {
     box.style.display = "block";
     clicked = false;
   }
-<<<<<<< HEAD
 })
 const submit = document.querySelector('#submit');
 submit.addEventListener("click", function(event){
 event.preventDefault();
 window.location.href='3index.html'
 } )
-=======
-});
-const submit = document.getElementById("submit");
-submit.addEventListener("click", function(event){
-event.preventDefault();
-window.location.href='3index.html'
-});
-// const submit1 = document.getElementById("submit");
-// submit1.addEventListener("click", function(event){
-// event.preventDefault();
-// window.location.href='2index.html'
-// });
-// const startButton = document.getElementById("startgame");
-// startButton.addEventListener("click", startTheGame);
-
-// function startTheGame(){
-//   window.location.href = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCCbGAk_7TAKEWEEcvoJUv5Vmz4lrB2oqs";
-// }
-
-// submit.addEventListener('click', myFunctionReference , false);
-
->>>>>>> 80f7e18818cc74fc3259fcbeeb754cb284eea54b
 
 // function showPosition(position){
 //     console.log(position);
