@@ -1,5 +1,6 @@
 
 #logo {
+<<<<<<< HEAD
   margin: 15px;
  /* margin: 20px was off */
   float: left;
@@ -62,3 +63,67 @@ form{
     font-size: 20px;
     
 }
+=======
+    margin: 15px;
+   /* margin: 20px was off */
+    float: left;
+    height: 180px;
+    width: 480px;
+   /* correct proportions to specified height */
+   /* border-radius: 50%;
+    makes it a circle */
+    float: right;
+  }
+  .header {
+    padding: 50px;
+   /*some padding*/
+    text-align: center;
+   /* center the text */
+    background-image: url("http://cdn.shopify.com/s/files/1/1023/3455/articles/Culture-Kings-Streetball---Blog_1024x1024.jpg?v=1526619009");
+   /*green background*/
+    color: orange;
+   /* white text color */
+    width: 89%;
+    height: 90%;
+    font-size: 25px;
+  }
+  .navbar {
+    overflow: hidden;
+   /* Hide overflow */
+    background-color: #333;
+   /* Dark background color */
+  }
+  .navbar a {
+    float: left;
+   /* Make sure that the links stay side-by-side */
+    display: block;
+   /* Change the display to block, for responsive reasons (see below) */
+    color: white;
+   /* White text color */
+    text-align: center;
+   /* Center the text */
+    padding: 14px 20px;
+   /* Add some padding */
+    text-decoration: none;
+   /* Remove underline */
+  }
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+   /* Float a link to the right */
+  }
+  /* Change color on hover/mouse-over */
+  .navbar a:hover {
+    background-color: #ddd;
+   /* Grey background color */
+    color: black;
+   /* Black text color */
+  }
+  form{
+      color: orange;
+      margin: auto;
+      width:18%;
+      font-size: 20px;
+      
+  }
+>>>>>>> 803a5ec3d158ae39aa21d908c43ae4751e27cf79
