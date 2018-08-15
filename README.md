@@ -30,6 +30,6 @@ user {
 * Click events: news, contact, about me, site, matching tool
 
 ### Division of Labor 
-Kevin -> css
-Justin -> js
-John -> html
+Kevin -> CSS
+Justin -> JavaScript
+John -> HTML
