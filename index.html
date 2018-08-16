@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <script src="main.js" defer></script>
+    <script src="carousel.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCbGAk_7TAKEWEEcvoJUv5Vmz4lrB2oqs"></script>
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script> 
@@ -40,52 +41,14 @@
         <p>Made by John, Kevin, and Justin</p>
     </div>
     <div class="navbar">
-        <a href="1index.html">home</a>
+        <a href="1index.html">Home</a>
         <a href="2index.html">Sign up</a>
         <a href="3index.html">Map</a>
         <a href="index.html" id="about">About John</a>
         <a href="https://www.youtube.com/watch?v=qaZIPRSgLkY" target="_blank">Origins of Streetball Video</a>
         <a href="http://www.agame.com/games/basketball" target="_blank">Online Basketball Games</a>
     </div>
-    <div id="box">
-        <h1>About Us</h1>
-        <p> Every summer they have a tournament hosted by positiveinfluencebball. I go see players in high school and younger. I play streetball on my old middle school. I was playing streetball with other middle schoolers. </p>
-        <div class="navbar">
-            <div class="dropdown">
-                <button class="dropbtn">Dropdown
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <div class="header1">
-                        <h2>Email News </h2>
-                    </div>
-                    <div class="row">
-                        <div class="column">
-                            <h3>Email Us</h3>
-                            <a href="#">johnm4692@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Dropdown 2
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <div class="header1">
-                        <h2>Phone Contact</h2>
-                    </div>
-                    <div class="row">
-                        <div class="column">
-                            <h3>Number</h3>
-                            <a href="#">917-513-6312</a>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="container">
         <div class="row">
@@ -144,13 +107,7 @@
             <p class="w3-medium">
                 Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
             </p>
-            <div class="container">
-              <input id="textEmail" type="email" placeholder="Email">
-              <input id="textPassword" type="password" placeholder="password">
-              <button id="btnLogin" class="btn btn-action">Sign In</button>
-              <button id="btnSignin" class="btn btn-secondary">Sign Up</button>
-              <button id="btnLogout" class="btn btn-action hide">Log Out</button>
-          </div>
+
           <!-- <div class="userSigning">
             <input type="email" id="txtEmail" placeholder="Email" value = "lol@gmail.com">
             <input type="username" id="txtName" placeholder="Username" value = "OG">
@@ -162,7 +119,10 @@
         
           </div> -->
            <!--  marks current location -->
-        <button id="startgame">Start a Game</button>
+           <button id="start" onclick="window.location.href='2index.html'">Start Game</button>
+           <br> 
+           <br>
+           <button id="join" onclick="window.location.href='3index.html'">Join Existing</button>
         <div id="demo"></div>
 
         </footer>
