@@ -1,221 +1,4 @@
 #logo {
-<<<<<<< HEAD
-    margin: 15px;
-   /* margin: 20px was off */
-    float: left;
-    height: 180px;
-    width: 480px;
-   /* correct proportions to specified height */
-   /* border-radius: 50%;
-    makes it a circle */
-    float: right;
-  }
-  .header {
-    padding: 50px;
-   /*some padding*/
-    text-align: center;
-   /* center the text */
-    background-image: url("http://cdn.shopify.com/s/files/1/1023/3455/articles/Culture-Kings-Streetball---Blog_1024x1024.jpg?v=1526619009");
-   /*green background*/
-    color: orange;
-   /* white text color */
-    width: 89%;
-    height: 90%;
-    font-size: 25px;
-  }
-  /* Increase the font size of the <h1> element */
-  .header h1 {
-    font-size: 40px;
-  }
-  /* Style the top navigation bar */
-  .navbar {
-    overflow: hidden;
-   /* Hide overflow */
-    background-color: #333;
-   /* Dark background color */
-  }
-  /* Style the navigation bar links */
-  .navbar a {
-    float: left;
-   /* Make sure that the links stay side-by-side */
-    display: block;
-   /* Change the display to block, for responsive reasons (see below) */
-    color: white;
-   /* White text color */
-    text-align: center;
-   /* Center the text */
-    padding: 14px 20px;
-   /* Add some padding */
-    text-decoration: none;
-   /* Remove underline */
-  }
-  /* Right-aligned link */
-  .navbar a.right {
-    float: right;
-   /* Float a link to the right */
-  }
-  /* Change color on hover/mouse-over */
-  .navbar a:hover {
-    background-color: #ddd;
-   /* Grey background color */
-    color: black;
-   /* Black text color */
-  }
-  /* Column container */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  /* Create two unequal columns that sits next to each other */
-  /* Sidebar/left column */
-  .side {
-    flex: 30%;
-   /* Set the width of the sidebar */
-    background-color: orange;
-   /* Grey background color */
-    padding: 20px;
-   /* Some padding */
-  }
-  /* Main column */
-  .main {
-    flex: 70%;
-   /* Set the width of the main content */
-    background-color: orange;
-   /* White background color */
-    padding: 20px;
-   /* Some padding */
-  }
-  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 700px) {
-    .row {
-        flex-direction: column;
-   }
-  }
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    .navbar a {
-        float: none;
-        width: 100%;
-   }
-    #box {
-        background: blue;
-        color: white;
-        width: 300px;
-        padding: 20px;
-   }
-   /* Style the video: 100% width and height to cover the entire window */
-    #myVideo {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-   }
-   /* Add some content at the bottom of the video/page */
-    .content {
-        position: fixed;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        color: #f1f1f1;
-        width: 100%;
-        padding: 20px;
-   }
-   /* Navbar container */
-    .navbar {
-        overflow: hidden;
-        background-color: #333;
-        font-family: Arial;
-   }
-   /* Links inside the navbar */
-    .navbar a {
-        float: left;
-        font-size: 16px;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-   }
-   /* The dropdown container */
-    .dropdown {
-        float: left;
-        overflow: hidden;
-   }
-   /* Dropdown button */
-    .dropdown .dropbtn {
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font: inherit;
-       /* Important for vertical align on mobile phones */
-        margin: 0;
-       /* Important for vertical align on mobile phones */
-   }
-   /* Add a red background color to navbar links on hover */
-    .navbar a:hover, .dropdown:hover .dropbtn {
-        background-color: red;
-   }
-   /* Dropdown content (hidden by default) */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        width: 100%;
-        left: 0;
-        box-shadow: 0px 8px 16px 0px rgba(134, 17, 119, 0.2);
-        z-index: 1;
-   }
-   /* Mega Menu header, if needed */
-    .dropdown-content .header {
-        background: red;
-        padding: 16px;
-        color: white;
-   }
-   /* Show the dropdown menu on hover */
-    .dropdown:hover .dropdown-content {
-        display: block;
-   }
-   /* Create three equal columns that floats next to each other */
-    .column {
-        float: left;
-        width: 33.33%;
-        padding: 10px;
-        background-color: #ccc;
-        height: 250px;
-   }
-   /* Style links inside the columns */
-    .column a {
-        float: none;
-        color: black;
-        padding: 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-   }
-   /* Add a background color on hover */
-    .column a:hover {
-        background-color: #ddd;
-   }
-   /* Clear floats after the columns */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-   }
-    h2{
-        text-align: whitesmoke;
-   }
-    h3{
-        text-align: whitesmoke;
-   }
-  }
-  
-  #demo {
-    min-height: 750px;
-  }
-=======
   margin: 15px;
  /* margin: 20px was off */
   float: left;
@@ -249,6 +32,7 @@
  /* Hide overflow */
   background-color: #333;
  /* Dark background color */
+ width:100%;
 }
 /* Style the navigation bar links */
 .navbar a {
@@ -431,4 +215,23 @@
 #demo {
   min-height: 750px;
 }
->>>>>>> 803a5ec3d158ae39aa21d908c43ae4751e27cf79
+#start {
+    font-size: 100px;
+    margin: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    justify-content: space-between;
+    
+  }
+  #join{
+    font-size: 100px;
+    margin: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    justify-content: space-between;
+  }
+  

@@ -1,17 +1,16 @@
-// Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    // x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 3000);
+
+const submit = document.querySelector('#submit');
+
+if(submit) {
+  submit.addEventListener("click", function(event){
+    event.preventDefault();
+    window.location.href='3index.html'
+    })
 }
+
+
+
+
 //create a variable to store the status of the box (true or false)
 let clicked = false;
 //select HTML link that will be clicked
@@ -29,25 +28,8 @@ aboutBtn.addEventListener("click", function() {
     box.style.display = "block";
     clicked = false;
   }
-});
-const submit = document.getElementById("submit");
-submit.addEventListener("click", function(event){
-event.preventDefault();
-window.location.href='3index.html'
-});
-// const submit1 = document.getElementById("submit");
-// submit1.addEventListener("click", function(event){
-// event.preventDefault();
-// window.location.href='2index.html'
-// });
-// const startButton = document.getElementById("startgame");
-// startButton.addEventListener("click", startTheGame);
+})
 
-// function startTheGame(){
-//   window.location.href = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCCbGAk_7TAKEWEEcvoJUv5Vmz4lrB2oqs";
-// }
-
-// submit.addEventListener('click', myFunctionReference , false);
 
 
 // function showPosition(position){
@@ -101,12 +83,16 @@ function initMap(){
 
 
 
-const button = document.querySelector("#startgame");
-const demo = document.querySelector("#demo");
-button.addEventListener("click", getLocation);
-function getLocation(){
-    initMap()
-}
+// const button = document.querySelector("#startgame");
+
+//   const demo = document.querySelector("#demo");
+
+//   button.addEventListener("click", getLocation);
+//   function getLocation(){
+//       initMap()
+//   }
+
+
 
 
 
