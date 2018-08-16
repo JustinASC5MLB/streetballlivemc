@@ -1,5 +1,4 @@
 #start {
-<<<<<<< HEAD
     font-size: 100px;
     margin: auto;
     width: 500px;
@@ -44,23 +43,3 @@ body,html {
     border-radius: 10px;  
 }
  */
-=======
-  font-size: 100px;
-  margin: auto;
-  width: 500px;
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  justify-content: space-between;
-  
-}
-#join{
-  font-size: 100px;
-  margin: auto;
-  width: 500px;
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  justify-content: space-between;
-}
->>>>>>> 803a5ec3d158ae39aa21d908c43ae4751e27cf79
